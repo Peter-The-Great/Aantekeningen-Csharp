@@ -1,6 +1,12 @@
+Bronnen:
 https://linqsamples.com/linq-to-objects/generation/Empty-lambda
+https://www.tutorialsteacher.com/linq/why-linq
 
-Voorbeeld van hoe je een list van een array moet maken:
+Meeste van de voorbeelden die hier gegeven zijn in principe queries. Er is wel een degelijk verschil tussen een query en een query als Lambda expression. Meestal gebruiken we in de toets een Lambda Query om antwoord te gegeven op onze formulieren.
+
+**Het grappige aan LINQ is dat het lijkt op SQL.**
+
+Voorbeeld van hoe je een list van een array moet maken **(Lambda Query)**:
 ```cs
 static void Sample_ToList_Lambda()
 {
@@ -13,7 +19,7 @@ static void Sample_ToList_Lambda()
 }
 ```
 
-Voorbeeld van op de Microsoft docs:
+Voorbeeld van op de Microsoft docs **(Normale Query)**:
 ```cs
 using System;
 using System.Linq;
@@ -55,7 +61,7 @@ static void Sample_Last_Lambda()
 {
     int[] numbers = { 7, 3, 5 };
 
-    var result numbers.Last();
+    var result = numbers.Last();
 
     Console.WriteLine("Last number in array is:");
     Console.WriteLine(result);
@@ -70,7 +76,7 @@ static void Sample_Max_Lambda()
 
     var result = numbers.Max();
 
-    Debug.WriteLine("Highest number is:");
-    Debug.WriteLine(result);
+    Console.WriteLine("Highest number is:");
+    Console.WriteLine(result);
 }
 ```
