@@ -1,3 +1,4 @@
+Deze zijn specifiek van Laurens Bekijk de rest van de aantekeningen als je iets specifieker wilt.
 # Toets Matrijs Aantekeningen
 
 De wegingen en wat we moeten kennen heb ik van de [toetsmatrijs](https://brightspace.hhs.nl/d2l/le/lessons/56633/units/567017) verkregen. Deze informatie heb ik vervolgens gesorteerd om de zwaarst wegende dingen bovenaan te zetten en heb ik anders geformatteert. Ook heb ik de kennis er bij gezet conform mijn aantekeningen en online onderzoek (bronnen zijn vermeld):

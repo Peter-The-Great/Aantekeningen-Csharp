@@ -8,7 +8,7 @@ public interface IMyInterface
     int GetValue();
 }
 
-public class MyClass
+public class MyClass : IMyInterface
 {
     private readonly IMyInterface _myInterface;
 

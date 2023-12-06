@@ -1,4 +1,4 @@
-An `enum` is a special "class" that represents a group of **constants** (unchangeable/read-only variables).
+An `enum` is a special "class" (distinct value type) that represents a group of **constants** (unchangeable/read-only variables).
 
 To create an `enum`, use the `enum` keyword (instead of class or interface), and separate the enum items with a comma:
 

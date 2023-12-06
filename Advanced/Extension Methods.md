@@ -10,7 +10,6 @@ Example: Extension Method
 int i = 10;
 
 bool result = i.IsGreaterThan(100); //return false
-
 ```
 
 The `IsGreaterThan()` method is not a method of int data type (Int32 struct). It is an extension method written by the programmer for the int data type. The IsGreaterThan() extension method will be available throughout the application by including the namespace in which it has been defined.
@@ -34,7 +33,7 @@ Example: Create a Class for Extension Methods
 ```csharp
 namespace ExtensionMethods
 {
-	// Het maakt niet uit hoe de klas eet.
+	// Het maakt niet uit hoe de klas eet. Het moet static
     public static class IntExtensions
     {
 
@@ -54,6 +53,7 @@ namespace ExtensionMethods
     public static class IntExtensions
      {
 		//Hierin is het belangrijk om altijd static bij te houden.
+		//Je voegt een method op de type int nu je kan na de this elk type toevoegen.
         public static bool IsGreaterThan(this int i, int value)
         {
             return i > value;
@@ -77,7 +77,7 @@ class Program
 
         bool result = i.IsGreaterThan(100); 
 
-        Console.WriteLine(result);
+        Console.WriteLine(result); //False
     }
 }
 ```
