@@ -1,6 +1,5 @@
 Bronnen:
-https://linqsamples.com/linq-to-objects/generation/Empty-lambda
-https://www.tutorialsteacher.com/linq/why-linq
+https://linqsamples.com/
 
 Meeste van de voorbeelden die hier gegeven zijn in principe queries. Er is wel een degelijk verschil tussen een query en een query als Lambda expression. Meestal gebruiken we in de toets een Lambda Query om antwoord te gegeven op onze formulieren.
 
@@ -78,5 +77,41 @@ static void Sample_Max_Lambda()
 
     Console.WriteLine("Highest number is:");
     Console.WriteLine(result);
+}
+```
+
+Voorbeeld van Single
+```cs
+// Note: Single will throw an Exception, if there is not exactly one element in the array.
+static void Sample_Single_Lambda()
+{
+    string[] names1 = { "Peter" };
+    string[] names3 = { "Peter", "Joe", "Wilma" };
+    string[] empty = { };
+
+    var result1 = names1.Single();
+
+    Debug.WriteLine("The only name in the array is:");
+    Debug.WriteLine(result1);
+
+    try
+    {
+        // This will throw an exception because array contains no elements
+        var resultEmpty = empty.Single();
+    }
+    catch (Exception e)
+    {
+        Debug.WriteLine(e.Message);
+    }
+
+    try
+    {
+        // This will throw an exception as well because array contains more than one element
+        var result3 = names3.Single();
+    }
+    catch (Exception e)
+    {
+        Debug.WriteLine(e.Message);
+    }
 }
 ```

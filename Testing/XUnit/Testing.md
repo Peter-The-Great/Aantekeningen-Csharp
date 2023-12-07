@@ -32,7 +32,7 @@ In dit voorbeeld wordt een test uitgevoerd om te controleren of de som van twee 
 
 ## Hieronder zijn ook attributes voor testing in Xunit
 
-In xUnit zijn er twee attributen die worden gebruikt om tests te definiëren: `[Fact]` en `[Theory]`. `[Fact]` wordt gebruikt om een ​​test te definiëren die geen invoerparameters heeft`[Theory]` wordt gebruikt om een ​​parameterized test te definiëren die één of meer `DataAttribute`-instanties verwacht om de waarden voor de methodeargumenten te leveren [1](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)[2](https://stackoverflow.com/questions/22373258/difference-between-fact-and-theory-xunit-net)[3](https://xunit.net/docs/comparisons).
+In xUnit zijn er twee attributen die worden gebruikt om tests te definiëren: `[Fact]` en `[Theory]`. `[Fact]` wordt gebruikt om een ​​test te definiëren die geen invoerparameters heeft`[Theory]` wordt gebruikt om een ​​parameterized test te definiëren die één of meer `DataAttribute`-instanties verwacht om de waarden voor de methodeargumenten te leveren [1](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test)[2](https://stackoverflow.com/questions/22373258/difference-between-fact-and-theory-xunit-net)[3](https://xunit.net/docs/comparisons). Hierdoor kun je dan makkelijker meerdere instanties testen.
 
 Hier is een voorbeeld van hoe je `[Fact]` kunt gebruiken om een ​​test te definiëren:
 

@@ -40,6 +40,8 @@ public class Car
 
 **Dependency Inversion (DI)**
 
+Je bent afhankelijk van een interface maar niet een implementatie zoals een class zoals hierboven.
+
 Laten we zeggen dat we een klasse hebben genaamd `Car` die afhankelijk is van een klasse genaamd `Engine`. In plaats van de `Car`-klasse rechtstreeks afhankelijk te maken van de `Engine`-klasse, kunnen we een abstractie maken van de `Engine`-klasse en de `Car`-klasse afhankelijk maken van de abstractie. Dit is een voorbeeld van DI.
 
 C#

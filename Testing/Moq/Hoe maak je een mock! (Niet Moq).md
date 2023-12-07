@@ -12,7 +12,7 @@ public class MyClass
 {
     private readonly IMyInterface _myInterface;
 
-    public MyClass(IMyInterface myInterface)
+    public MyClass(MyInterfaceMock myInterface)
     {
         _myInterface = myInterface;
     }

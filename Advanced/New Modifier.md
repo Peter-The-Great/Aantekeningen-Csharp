@@ -33,7 +33,7 @@ It is an error to use both `new` and [override](https://learn.microsoft.com/e
 
 Using the `new` modifier in a declaration that does not hide an inherited member generates a warning.
 
-[](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier#examples)
+[1](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-modifier#examples)
 
 ## Examples
 
