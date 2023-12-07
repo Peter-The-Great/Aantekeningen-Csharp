@@ -1,3 +1,6 @@
+Bronnen:
+[1. C# Tutorial](https://www.csharptutorial.net/csharp-design-patterns/csharp-dependency-inversion-principle/)
+
 Dependency Injection (DI) en Dependency Inversion (DI) zijn twee ontwerppatronen die in de softwareontwikkeling worden gebruikt om de afhankelijkheden tussen objecten te verminderen en de code flexibeler te maken.
 
 **Dependency Injection** is een techniek waarbij objecten (‘afhankelijkheden’) aan een klasse worden geleverd door middel van het Dependency Injection-ontwerppatroon. Dit kan typisch door afhankelijkheden via een van de volgende manieren door te geven:
