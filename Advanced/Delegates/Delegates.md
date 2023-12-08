@@ -33,7 +33,7 @@ Suppose, we have a method named `calculateSum()` whose signature is the same a
 
 To create an instance of `myDelegate`, we pass a method name as a parameter. For example,
 
-```csharp
+```cs
 myDelegate d1 = new myDelegate(calculateSum);
 ```
 

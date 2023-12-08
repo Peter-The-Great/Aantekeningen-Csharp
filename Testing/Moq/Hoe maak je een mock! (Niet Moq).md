@@ -1,4 +1,5 @@
 Hierin zal ik opschrijven hoe je een mock kan maken in c# zonder gebruik te maken van Moq:
+
 ```cs
 //Hier Kun je iets hebben zoals een iinterface of class
 interface IMyInterface
@@ -19,7 +20,7 @@ public class MyClass
 {
     private readonly IMyInterface _myInterface;
 
-    public MyClass(MyInterfaceMock myInterface)
+    public MyClass(IMyInterface myInterface)
     {
         _myInterface = myInterface;
     }
@@ -47,5 +48,4 @@ public class MyTests
         Assert.Equal(10, result);
     }
 }
-
 ```

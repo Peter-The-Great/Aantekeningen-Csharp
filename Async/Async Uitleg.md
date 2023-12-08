@@ -45,4 +45,4 @@ class Program
 }
 ```
 
-In dit voorbeeld wordt de `Task.Run`-methode gebruikt om een nieuwe taak te maken en uit te voeren die de tekst “Hello, world!” naar de console schrijft. De `await`-operator wordt gebruikt om te wachten tot de taak is voltooid voordat de toepassing wordt afgesloten .
+In dit voorbeeld wordt de `Task.Run`-methode gebruikt om een nieuwe taak te maken en uit te voeren die de tekst “Hello, world!” naar de console schrijft. De `await`-operator wordt gebruikt om te wachten tot de taak is voltooid voordat de toepassing wordt afgesloten.
