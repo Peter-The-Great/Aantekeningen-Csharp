@@ -13,8 +13,7 @@ Meer informatie:
 
 Middleware is software die in een app-pijplijn wordt geassembleerd om verzoeken en antwoorden te verwerken. Het ASP.NET Core framework bevat standaard middleware, zoals routing, modelvalidatie, modelbinding, enz. Hier is een voorbeeld van hoe je middleware kunt gebruiken om een ​​aangepaste header toe te voegen aan een HTTP-reactie:
 
-C#Door AI gegenereerde code. Controleer en gebruik zorgvuldig. .
-
+Voorbeeld:
 ```csharp
 public class CustomHeaderMiddleware
 {
@@ -37,8 +36,7 @@ In dit voorbeeld voegt de `CustomHeaderMiddleware`-klasse een aangepaste header
 
 Om deze middleware in een ASP.NET Core-applicatie te gebruiken, moet je deze registreren in de `Configure`-methode van de `Startup`-klasse:
 
-C#Door AI gegenereerde code. Controleer en gebruik zorgvuldig. .
-
+Voorbeeld:
 ```csharp
 public void Configure(IApplicationBuilder app)
 {

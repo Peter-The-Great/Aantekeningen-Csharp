@@ -1,10 +1,12 @@
 Hierin zal ik opschrijven hoe je een mock kan maken in c# zonder gebruik te maken van Moq:
 ```cs
+//Hier Kun je iets hebben zoals een iinterface of class
 interface IMyInterface
 {
 	int GetValue();
 }
 
+//Dit is je mock die dan de functies implementeerd van de Interface en class.
 public class MyInterfaceMock : IMyInterface
 {
     public int GetValue()
