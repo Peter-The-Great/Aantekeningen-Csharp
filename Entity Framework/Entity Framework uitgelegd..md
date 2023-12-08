@@ -50,10 +50,8 @@ namespace MyProject
                 var entity = new MyEntity { Name = "John Doe" };
                 context.MyEntities.Add(entity);
                 context.SaveChanges();
-
-                var query = from e in context.MyEntities
-                            where e.Name == "John Doe"
-                            select e;
+                
+                var query = context.MyEntities.Where(e => e.Name == "John Doe");
 
                 foreach (var item in query)
                 {
