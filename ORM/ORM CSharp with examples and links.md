@@ -293,7 +293,7 @@ Let's comment on some interesting constructs in the code.
 
 We are expressing a 1-Many relationship by the following construct on the `Order` class:
 
-```
+```cs
 public ICollection<OrderItem> Items { get; set; }
 ```
 
@@ -305,7 +305,7 @@ Above we are saying that we a list of of OrderItems on the Order.
 
 We are also expressing another database concept namely _Foreign key_. In the `OrderItem` entity we are saying that we have a reference to a Product. In code, we write this as:
 
-```
+```cs
 public virtual Product Product { get; set; }
 ```
 
@@ -315,7 +315,7 @@ public virtual Product Product { get; set; }
 
 Let's also comment on first `DbContext`. When we want a new Database we should inherit from this class like so:
 
-```
+```cs
 public class DatabaseContext : DbContext
 ```
 
@@ -323,7 +323,7 @@ public class DatabaseContext : DbContext
 
 `DbSet` represents a table in a Database. It's a generic that takes a `type` as a template argument, like so:
 
-```
+```cs
 public DbSet<OrderItem> OrderItems { get; set; }
 ```
 
@@ -362,7 +362,7 @@ This created some files for us namely the following:
 
 Above you can see that we got our migration `InitialCreate` but that the name is being prepended by a timestamp. This is so Entity Framework knows what to run and in what order. We can also see that we have two versions of this file, a _.cs_ and a `Designer.cs` file. We only care about the first one. Let's have a look at it:
 
-```
+```cs
 using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
@@ -548,7 +548,7 @@ The first thing we see is that we inherit from the class `Migration`. The secon
 
 Ok, we have a Migration, let's _apply_ it. We do that with the following command:
 
-```
+```cs
 dotnet ef database update
 ```
 
