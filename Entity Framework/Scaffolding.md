@@ -1,1 +1,7 @@
-https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/?tabs=dotnet-core-cli
+Scaffolding in C# Entity Framework is het proces van het genereren van code of bestanden die nodig zijn om een bepaalde taak uit te voeren. Het is een manier om de ontwikkelaar te helpen bij het opzetten van een project of het toevoegen van nieuwe functies aan een bestaand project.
+
+In Entity Framework Core kan scaffolding worden gebruikt om entiteitstypeklassen en een `DbContext`-klasse te genereren op basis van een bestaande database. Dit kan worden gedaan met behulp van de Scaffold-DbContext-opdracht van de EF Core Package Manager Console (PMC) tools of de dotnet ef dbcontext scaffold-opdracht van de .NET Command-line Interface (CLI) tools [1](https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/).
+
+Scaffolding kan ook worden gebruikt om controllers en views te genereren voor een ASP.NET Core MVC-toepassing. Dit kan worden gedaan met behulp van de `dotnet aspnet-codegenerator`-opdracht van de .NET CLI tools [2](https://satvasolutions.com/how-to-do-entity-framework-core-scaffolding-process-in-asp-net-core/).
+
+Als je meer informatie nodig hebt over het gebruik van scaffolding in Entity Framework Core, raad ik je aan om de officiële documentatie van Microsoft te raadplegen [1](https://learn.microsoft.com/en-us/ef/core/managing-schemas/scaffolding/). Daar vind je meer informatie over hoe je scaffolding kunt gebruiken in je project.
