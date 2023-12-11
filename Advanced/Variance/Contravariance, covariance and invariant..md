@@ -44,7 +44,7 @@ In C#, "contravariant" and "covariant" are terms related to generic type paramet
     ICovariant<Dog>();
 ```
     
-    In this example, `ICovariant` is a covariant interface because it's marked with the `out` keyword. This allows us to assign an instance of `ICovariant<Dog>` to a variable of type `ICovariant<Animal>`. The `GetItem` method returns a `T`, which is allowed because of covariance.
+In this example, `ICovariant` is a covariant interface because it's marked with the `out` keyword. This allows us to assign an instance of `ICovariant<Dog>` to a variable of type `ICovariant<Animal>`. The `GetItem` method returns a `T`, which is allowed because of covariance.
     
 2. **Contravariance:** Contravariance allows you to use a less derived type than originally specified. It is denoted by the `in` keyword in C#. You can use contravariance when a type parameter is only used as method parameter types. For example:
     
@@ -57,7 +57,7 @@ In C#, "contravariant" and "covariant" are terms related to generic type paramet
     IContravariant<Dog> contravariant = new IContravariant<Animal>();
 ```
     
-    In this example, `IContravariant` is a contravariant interface because it's marked with the `in` keyword. This allows us to assign an instance of `IContravariant<Animal>` to a variable of type `IContravariant<Dog>`. The `UseItem` method accepts a `T` as a parameter, which is allowed because of contravariance.
+In this example, `IContravariant` is a contravariant interface because it's marked with the `in` keyword. This allows us to assign an instance of `IContravariant<Animal>` to a variable of type `IContravariant<Dog>`. The `UseItem` method accepts a `T` as a parameter, which is allowed because of contravariance.
     
 
 It's important to note that contravariance and covariance only apply to reference types (classes and interfaces) and not to value types (structs).
@@ -88,3 +88,6 @@ https://www.youtube.com/watch?v=VHDYx7oPE84&ab_channel=Pluralsight
 Tips:
 Met parameters is contravariant
 Met getters is covariant.
+
+Photo
+![[F0CD2A34-1A59-494E-BF1B-B1B3DCD33F21.jpeg]]

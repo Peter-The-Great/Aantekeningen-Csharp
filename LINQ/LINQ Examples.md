@@ -91,8 +91,8 @@ static void Sample_Single_Lambda()
 
     var result1 = names1.Single();
 
-    Debug.WriteLine("The only name in the array is:");
-    Debug.WriteLine(result1);
+    Console.WriteLine("The only name in the array is:");
+    Console.WriteLine(result1);
 
     try
     {
@@ -101,7 +101,7 @@ static void Sample_Single_Lambda()
     }
     catch (Exception e)
     {
-        Debug.WriteLine(e.Message);
+        Console.WriteLine(e.Message);
     }
 
     try
@@ -111,7 +111,7 @@ static void Sample_Single_Lambda()
     }
     catch (Exception e)
     {
-        Debug.WriteLine(e.Message);
+        Console.WriteLine(e.Message);
     }
 }
 ```
