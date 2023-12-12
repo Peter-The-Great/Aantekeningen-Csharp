@@ -53,3 +53,26 @@ services.AddSingleton<IMyService, MyService>();
 
 In dit voorbeeld wordt de `MyService`-klasse geregistreerd als implementatie van de `IMyService`-interface als een singleton. Dit betekent dat er slechts één instantie van de service wordt gemaakt voor de hele app.
 
+
+## Wanneer moet ik wat gebruiken
+Services met een Transient levensduur worden elke keer aangemaakt wanneer ze worden aangevraagd vanuit de servicecontainer. Dit type levensduur is geschikt voor lichtgewicht, stateless services [1](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-7.0)[2](https://mattruma.com/asp-net-core-service-lifetimes-explained/)[3](https://stackoverflow.com/questions/57968893/asp-net-core-2-0-service-life-time).
+
+### Transiant
+Je zou Transient-services kunnen gebruiken in de volgende scenario’s:
+
+- Wanneer de service geen toestand (state) bevat en geen gegevens opslaat tussen aanroepen.
+- Wanneer de service afhankelijk is van andere services met een Transient levensduur.
+- Wanneer de service afhankelijk is van services met een Scoped of Singleton levensduur, maar de service zelf geen toestand bevat.
+
+### Scoped
+Services met een Scoped levensduur worden één keer per client request (verbinding) aangemaakt en worden binnen die request opnieuw gebruikt) [1](https://stackoverflow.com/questions/57968893/asp-net-core-2-0-service-life-time).
+
+Je zou Scoped-services kunnen gebruiken in de volgende scenario’s:
+
+- Wanneer de service toestand (state) bevat die specifiek is voor de huidige client request.
+- Wanneer de service afhankelijk is van andere services met een Scoped of Singleton levensduur.
+- Wanneer de service afhankelijk is van services met een Transient levensduur, maar de service zelf toestand bevat die specifiek is voor de huidige client request.
+
+### Singleton
+
+

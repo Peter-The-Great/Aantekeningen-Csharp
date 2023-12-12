@@ -42,7 +42,7 @@ public class Program
 }
 ```
 
-Voorbeeld om met empty te gebruiken:
+Voorbeeld om met **empty** te gebruiken:
 ```cs
 static void Sample_Empty_Lambda()
 {
@@ -54,7 +54,7 @@ static void Sample_Empty_Lambda()
 }
 ```
 
-Voorbeeld van het laatste onderdeel te pakken uit de lijst:
+Voorbeeld van het **Last** onderdeel te pakken uit de lijst:
 ```cs
 static void Sample_Last_Lambda()
 {
@@ -67,7 +67,7 @@ static void Sample_Last_Lambda()
 }
 ```
 
-Voorbeeld van Max:
+Voorbeeld van **Max**:
 ```cs
 static void Sample_Max_Lambda()
 {
@@ -80,7 +80,7 @@ static void Sample_Max_Lambda()
 }
 ```
 
-Voorbeeld van Distinct:
+Voorbeeld van **Distinct**:
 ```cs
 static void Sample_Distinct_Lambda()
 {
@@ -94,7 +94,7 @@ static void Sample_Distinct_Lambda()
 }
 ```
 
-Voorbeeld van Single
+Voorbeeld van **Single**
 ```cs
 // Note: Single will throw an Exception, if there is not exactly one element in the array.
 static void Sample_Single_Lambda()
@@ -130,7 +130,33 @@ static void Sample_Single_Lambda()
 }
 ```
 
-Voorbeeld van Union:
+Voorbeeld van **Any**:
+```cs
+static void Sample_Any_Lambda()
+{
+    string[] names = { "Bob", "Ned", "Amy", "Bill" };
+
+    var result = names.Any(n => n.StartsWith("B"));
+
+    Console.WriteLine("Does any of the names start with the letter 'B':");
+    Console.WriteLine(result);
+}
+```
+
+Voorbeeld van **All**:
+```cs
+static void Sample_All_Lambda()
+{
+    string[] names = { "Bob", "Ned", "Amy", "Bill" };
+
+    var result = names.All(n => n.StartsWith("B"));
+
+    Console.WriteLine("Does all of the names start with the letter 'B':");
+    Console.WriteLine(result);
+}
+```
+
+Voorbeeld van **Union**:
 ```cs
 static void Sample_Union_Lambda()
 {
@@ -145,7 +171,21 @@ static void Sample_Union_Lambda()
 }
 ```
 
-Voorbeeld van GroupBy, meer over groupby vind je hier. [[GroupBy Voorbeelden]]
+Voorbeeld van **OfType**:
+```cs
+static void Sample_OfType_Lambda()
+{
+    object[] objects = { "Thomas", 31, 5.02, null, "Joey" };
+
+    var result = objects.OfType<string>();
+
+    Console.WriteLine("Objects being of type string have the values:");
+    foreach (string str in result)
+        Console.WriteLine(str);
+}
+```
+
+Voorbeeld van **GroupBy**, meer over groupby vind je hier. [[GroupBy Voorbeelden]]
 ```cs
 using System;
 using System.Collections.Generic;
