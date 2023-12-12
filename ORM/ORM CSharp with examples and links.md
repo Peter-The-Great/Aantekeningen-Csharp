@@ -139,7 +139,7 @@ cd App
 
 Then install the needed NuGet libraries:
 
-```
+```cs
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Design
 ```
@@ -149,7 +149,7 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 This will add references to your project. Open up `App.csproj` and you should find something like this:
 
-```
+```cs
 <ItemGroup>
   <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
   <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.6" />

@@ -91,8 +91,8 @@ static void Sample_Single_Lambda()
 
     var result1 = names1.Single();
 
-    Debug.WriteLine("The only name in the array is:");
-    Debug.WriteLine(result1);
+    Console.WriteLine("The only name in the array is:");
+    Console.WriteLine(result1);
 
     try
     {
@@ -101,7 +101,7 @@ static void Sample_Single_Lambda()
     }
     catch (Exception e)
     {
-        Debug.WriteLine(e.Message);
+        Console.WriteLine(e.Message);
     }
 
     try
@@ -111,7 +111,90 @@ static void Sample_Single_Lambda()
     }
     catch (Exception e)
     {
-        Debug.WriteLine(e.Message);
+        Console.WriteLine(e.Message);
     }
 }
 ```
+
+Voorbeeld van GroupBy, meer over groupby vind je hier. [[GroupBy Voorbeelden]]
+```cs
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        List<Person> people = new List<Person>
+        {
+            new Person { Name = "Alice", Age = 25 },
+            new Person { Name = "Bob", Age = 30 },
+            new Person { Name = "Charlie", Age = 25 },
+            new Person { Name = "David", Age = 30 },
+            new Person { Name = "Eve", Age = 20 }
+        };
+
+        // GroupBy leeftijdscategorieën
+        var groupedByAge = people.GroupBy(p => p.Age);
+
+        // Itereer over de groepen en toon de resultaten
+        foreach (var group in groupedByAge)
+        {
+            Console.WriteLine($"Leeftijdscategorie: {group.Key}");
+            foreach (var person in group)
+            {
+                Console.WriteLine($"- {person.Name}");
+            }
+        }
+    }
+}
+
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+```
+
+`Aggregate` is een LINQ-functie waarmee je een aggregatie uitvoert op een verzameling elementen. Het voert een specifieke bewerking uit op elk element van de verzameling en houdt een geaccumuleerd resultaat bij terwijl het door de elementen gaat.
+
+### Voorbeeld:
+
+Stel dat we een lijst van getallen hebben en we willen de som van alle elementen berekenen met behulp van `Aggregate`.
+
+```csharp
+using System;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        // Bereken de som van alle getallen met behulp van Aggregate
+        int sum = numbers.Aggregate((acc, x) => acc + x);
+
+        Console.WriteLine($"De som van de getallen is: {sum}");
+    }
+}
+```
+
+In dit voorbeeld wordt `Aggregate` gebruikt om de som van alle getallen in de lijst te berekenen. De `acc` parameter houdt het geaccumuleerde resultaat bij, terwijl `x` door elk element in de lijst gaat en dat toevoegt aan het geaccumuleerde resultaat `acc`.
+
+De uitvoer zal zijn:
+
+```
+De som van de getallen is: 15
+```
+
+Dit is slechts een eenvoudig voorbeeld van `Aggregate`. De kracht van `Aggregate` ligt in het feit dat je het kunt gebruiken om complexere bewerkingen uit te voeren op elementen in een collectie, zoals het uitvoeren van reductiebewerkingen, het samenstellen van strings, het vinden van het maximum/minimum, enzovoort. Je kunt ook een beginwaarde opgeven voor het geaccumuleerde resultaat.
+
+Bijvoorbeeld, als je een beginwaarde wilt specificeren, zou je de `Aggregate`-methode als volgt gebruiken:
+
+```csharp
+int sumWithSeed = numbers.Aggregate(0, (acc, x) => acc + x);
+```
+
+Hier wordt `0` gebruikt als het startpunt voor de som. Dit zal resulteren in dezelfde uitvoer als eerder, namelijk `15`.

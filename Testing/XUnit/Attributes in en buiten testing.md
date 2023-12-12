@@ -1,0 +1,9 @@
+Er zijn veel attributen beschikbaar in C# die u kunt gebruiken om uw code te annoteren en extra informatie te geven. Hier zijn enkele veelgebruikte attributen:
+
+- `[Obsolete]`: Geeft aan dat een methode, eigenschap of klasse verouderd is en niet langer moet worden gebruikt. Dit attribuut kan ook een bericht bevatten dat uitlegt waarom de code verouderd is.
+- `[Serializable]`: Geeft aan dat een klasse kan worden geserialiseerd en gedeserialiseerd. Dit is handig bij het opslaan van objecten in bestanden of bij het verzenden van objecten over een netwerk.
+- `[Conditional]`: Hiermee kunt u een methode markeren die alleen wordt gecompileerd als een bepaalde voorwaarde is voldaan. Dit is handig bij het schrijven van code die alleen in bepaalde omstandigheden moet worden uitgevoerd.
+- `[DllImport]`: Hiermee kunt u een methode importeren uit een native DLL-bestand. Dit is handig bij het werken met onbeheerde code.
+- `[WebMethod]`: Geeft aan dat een methode kan worden aangeroepen via HTTP. Dit is handig bij het maken van webtoepassingen.
+
+Dit zijn slechts enkele voorbeelden van de vele attributen die beschikbaar zijn in C#. U kunt ook uw eigen aangepaste attributen maken om extra informatie aan uw code toe te voegen. Als u meer wilt weten over attributen in C#, raadpleeg dan de officiële Microsoft-documentatie [1](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/)[2](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/attributes)[3](https://learn.microsoft.com/en-us/dotnet/csharp/advanced-topics/reflection-and-attributes/attribute-tutorial)

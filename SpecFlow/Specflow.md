@@ -2,7 +2,7 @@ SpecFlow is een testautomatiseringsoplossing voor .NET gebouwd op het BDD-paradi
 
 Hier is een eenvoudig voorbeeld van hoe u SpecFlow kunt gebruiken om een ​​test te schrijven voor een eenvoudige rekenmachine-applicatie:
 
-```
+```cs
 Feature: Calculator
     In order to avoid silly mistakes
     As a math idiot
@@ -28,7 +28,7 @@ BDD biedt verschillende voordelen, waaronder:
 
 Hier is een eenvoudig voorbeeld van hoe u SpecFlow kunt gebruiken om een ​​test te schrijven voor een eenvoudige rekenmachine-applicatie:
 
-```
+```cs
 Feature: Calculator
     In order to avoid silly mistakes
     As a math idiot
@@ -42,3 +42,13 @@ Scenario: Add two numbers
 ```
 
 In dit voorbeeld definieert de functie “Calculator” een scenario waarin twee getallen worden opgeteld. De stappen die nodig zijn om deze test uit te voeren, worden vervolgens gedefinieerd in de “Scenario” -sectie. De stappen zijn geschreven in natuurlijke taal en worden vervolgens gekoppeld aan de toepassingscode met behulp van bindings [1](https://www.psyq.nl/angststoornis/verschillende-angststoornissen/body-dysmorphic-disorder-bdd).
+
+### Nadelen
+Er zijn enkele nadelen van BDD, waaronder:
+
+1. **Tijdsintensief**: BDD-tests kunnen tijdrovend zijn om te schrijven en te onderhouden, vooral als de testsuite groot is [1](https://appmaster.io/nl/blog/gedragsgestuurde-ontwikkeling-bdd).
+2. **Complexiteit**: BDD-tests kunnen complex worden als ze niet goed worden beheerd, wat kan leiden tot een toename van de onderhoudskosten [1](https://appmaster.io/nl/blog/gedragsgestuurde-ontwikkeling-bdd).
+3. **Moeilijk te schalen**: BDD-tests kunnen moeilijk te schalen zijn als de applicatie groter wordt, wat kan leiden tot een toename van de uitvoeringstijd van de tests [1](https://appmaster.io/nl/blog/gedragsgestuurde-ontwikkeling-bdd).
+4. **Moeilijk te onderhouden**: BDD-tests kunnen moeilijk te onderhouden zijn als de applicatie verandert, wat kan leiden tot een toename van de onderhoudskosten [1](https://appmaster.io/nl/blog/gedragsgestuurde-ontwikkeling-bdd).
+
+Ondanks deze nadelen kan BDD nog steeds een waardevolle aanpak zijn voor het testen van software, vooral als het wordt gebruikt om de communicatie tussen teamleden te verbeteren en de kwaliteit van de software te verbeteren [1](https://appmaster.io/nl/blog/gedragsgestuurde-ontwikkeling-bdd).

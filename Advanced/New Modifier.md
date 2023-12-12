@@ -39,8 +39,6 @@ Using the `new` modifier in a declaration that does not hide an inherited memb
 
 In this example, a base class, `BaseC`, and a derived class, `DerivedC`, use the same field name `x`, which hides the value of the inherited field. The example demonstrates the use of the `new` modifier. It also demonstrates how to access the hidden members of the base class by using their fully qualified names.
 
-C#Copy
-
 ```cs
 public class BaseC
 {
@@ -74,8 +72,6 @@ Output:
 ```
 
 In this example, a nested class hides a class that has the same name in the base class. The example demonstrates how to use the `new` modifier to eliminate the warning message and how to access the hidden class members by using their fully qualified names.
-
-C#Copy
 
 ```cs
 public class BaseC
