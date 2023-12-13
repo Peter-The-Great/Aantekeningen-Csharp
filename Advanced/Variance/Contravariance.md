@@ -12,6 +12,7 @@ class Program
     static void Main(string[] args)
     {
         MyDelegate del = new MyDelegate(Method1);
+        //Method1(new Giraffe());
         del(new Giraffe());
     }
 

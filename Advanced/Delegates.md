@@ -60,9 +60,10 @@ class Program
         // create an instance of delegate by passing method name 
         myDelegate d = new myDelegate(calculateSum);
 
-        // calling calculateSum() using delegate
+        // calling calculateSum(5,6) using delegate
         int result = d(5, 6);
 
+        //11
         Console.WriteLine(result);
     }
 }
